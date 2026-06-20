@@ -9,28 +9,28 @@ export function Header() {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <a href="/" className="font-serif text-2xl tracking-wide text-foreground">
-            Wabi
+            Красавица города
           </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-12">
             <a
-              href="#philosophy"
+              href="#about"
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
             >
-              Философия
+              О событии
             </a>
             <a
-              href="#services"
+              href="#audience"
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
             >
-              Услуги
+              Аудитория
             </a>
             <a
-              href="#process"
+              href="#packages"
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
             >
-              Процесс
+              Пакеты
             </a>
             <a
               href="#contact"
@@ -47,42 +47,42 @@ export function Header() {
             aria-label="Открыть меню"
           >
             <span
-              className={`block w-6 h-px bg-foreground transition-transform duration-300 ${isMenuOpen ? "rotate-45 translate-y-2" : ""}`}
+              className={`block w-6 h-px bg-foreground ${isMenuOpen ? "rotate-45 translate-y-2" : ""}`}
             />
             <span
-              className={`block w-6 h-px bg-foreground transition-opacity duration-300 ${isMenuOpen ? "opacity-0" : ""}`}
+              className={`block w-6 h-px bg-foreground ${isMenuOpen ? "opacity-0" : ""}`}
             />
             <span
-              className={`block w-6 h-px bg-foreground transition-transform duration-300 ${isMenuOpen ? "-rotate-45 -translate-y-2" : ""}`}
+              className={`block w-6 h-px bg-foreground ${isMenuOpen ? "-rotate-45 -translate-y-2" : ""}`}
             />
           </button>
         </div>
 
         {/* Mobile Menu */}
         <div
-          className={`md:hidden overflow-hidden transition-all duration-500 ease-out ${isMenuOpen ? "max-h-64 pb-8" : "max-h-0"}`}
+          className={`md:hidden overflow-hidden ${isMenuOpen ? "max-h-64 pb-8" : "max-h-0"}`}
         >
           <div className="flex flex-col gap-6 pt-4">
             <a
-              href="#philosophy"
+              href="#about"
               onClick={() => setIsMenuOpen(false)}
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
             >
-              Философия
+              О событии
             </a>
             <a
-              href="#services"
+              href="#audience"
               onClick={() => setIsMenuOpen(false)}
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
             >
-              Услуги
+              Аудитория
             </a>
             <a
-              href="#process"
+              href="#packages"
               onClick={() => setIsMenuOpen(false)}
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
             >
-              Процесс
+              Пакеты
             </a>
             <a
               href="#contact"

@@ -5,9 +5,9 @@ export function Footer() {
         <div className="grid md:grid-cols-12 gap-12">
           {/* Logo & Tagline */}
           <div className="md:col-span-4">
-            <p className="font-serif text-2xl tracking-wide text-foreground mb-4">Wabi</p>
+            <p className="font-serif text-2xl tracking-wide text-foreground mb-4">Красавица города</p>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Японский минимализм в сочетании со скандинавским теплом.
+              Главный конкурс красоты Саранска. Огарёв Арена, 2026.
             </p>
           </div>
 
@@ -15,14 +15,14 @@ export function Footer() {
           <div className="md:col-span-2 md:col-start-7">
             <p className="text-xs tracking-widest uppercase text-muted-foreground mb-4">Навигация</p>
             <nav className="flex flex-col gap-3">
-              <a href="#philosophy" className="text-sm text-foreground hover:text-sage transition-colors">
-                Философия
+              <a href="#about" className="text-sm text-foreground hover:text-sage transition-colors">
+                О событии
               </a>
-              <a href="#services" className="text-sm text-foreground hover:text-sage transition-colors">
-                Услуги
+              <a href="#audience" className="text-sm text-foreground hover:text-sage transition-colors">
+                Аудитория
               </a>
-              <a href="#process" className="text-sm text-foreground hover:text-sage transition-colors">
-                Процесс
+              <a href="#packages" className="text-sm text-foreground hover:text-sage transition-colors">
+                Пакеты
               </a>
               <a href="#contact" className="text-sm text-foreground hover:text-sage transition-colors">
                 Контакты
@@ -38,7 +38,7 @@ export function Footer() {
                 Instagram
               </a>
               <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
-                Pinterest
+                VK
               </a>
               <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
                 Telegram
@@ -63,9 +63,9 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Wabi Studio. Все права защищены.
+            &copy; {new Date().getFullYear()} Красавица города. Все права защищены.
           </p>
-          <p className="text-xs text-muted-foreground">Создано с намерением</p>
+          <p className="text-xs text-muted-foreground">Огарёв Арена · Саранск</p>
         </div>
       </div>
     </footer>
